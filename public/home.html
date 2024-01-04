@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title> 
+    <style>
+        .login-form{
+            border:2px solid gray;
+            border-radius: 4px;
+            padding:40px;
+            box-shadow: 2px 2px 2px 2px gray;
+            width:250px;
+        }
+    </style>
+    
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="../node_modules/@babel/standalone/babel.js"></script>
+    <script type="text/babel">
+
+        function Login(){
+            
+            return (<div className="login-form">
+                        <dl>
+                          <dt> Username    </dt>
+                          <dd><input type ="text"/></dd>
+                          <dt> Password</dt>
+                          <dd><input type ="Password"/></dd>
+                        </dl>
+                        <button>Login</button>
+                    </div>
+                )
+        }
+
+
+        ReactDOM.render(<Login/>, document.getElementById('root'));
+    </script>
+</head>
+<body>
+    <noscript>Please enable JavaScript on your browser</noscript>
+    <div id ="root"></div>
+</body>
+</html>
